@@ -18,7 +18,7 @@ export default class Tooltip {
     }
   }
 
-  // remove tooltip e os eventos de mauseMove e mouseLeave 
+  // remove tooltip e os eventos de mauseMove e mouseLeave
   onMouseLeave({ currentTarget }) {
     this.tooltipBox.remove();
     currentTarget.removeEventListener('mouseleave', this.onMouseLeave);
@@ -44,7 +44,7 @@ export default class Tooltip {
     currentTarget.addEventListener('mouseleave', this.onMouseLeave);
   }
 
-  // adiciona os eventos de mouseOver a cada tooltip 
+  // adiciona os eventos de mouseOver a cada tooltip
   addTooltipsEvent() {
     this.tooltips.forEach((item) => {
       item.addEventListener('mouseover', this.onMouseOver);
