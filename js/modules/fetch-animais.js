@@ -9,7 +9,7 @@ export default function fetchAnimais(url, target) {
     return div;
   }
 
-  // Preenche cadaanimal no DOM
+  // Preenche cada animal no DOM
   const numerosGrid = document.querySelector(target);
   function preencherAnimais(animal) {
     const divAnimal = createAnimal(animal);
